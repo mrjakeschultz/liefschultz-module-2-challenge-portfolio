@@ -1,0 +1,53 @@
+/* Everything is border-box. border-box is god. */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --header-color: #06038D;
+    --line-color: #8C5B0A;
+    --nav-button-hover: #E5E1E6;
+    --nav-text-color: #D9911A;
+    --body-background-color: #F1EDF2;
+    --works-outline-color: #06038D;
+    --header-text-color: #E6EDf5;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    background-color: var(--body-background-color);
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-size: cover;
+    color: var(--header-text-color);
+    background-color: var(--header-color);
+    padding: 40px 35px;
+}
+
+.header-nav-list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+}
+
+.header-nav-buttons {
+    padding: 0 30px;
+    font-size: 3;
+}
+
+.basic-flex-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex: 1;
+}
