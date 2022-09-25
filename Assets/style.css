@@ -22,7 +22,8 @@ body {
     background-color: var(--body-background-color);
 }
 
-header {
+
+header h1 {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -31,6 +32,17 @@ header {
     background-color: var(--header-color);
     padding: 40px 35px;
 }
+
+header ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-size: cover;
+    color: var(--header-text-color);
+    background-color: var(--header-color);
+    padding: 40px 35px;
+}
+
 
 .header-nav-list {
     display: flex;
@@ -43,11 +55,82 @@ header {
 .header-nav-buttons {
     padding: 0 30px;
     font-size: 3;
+    display: inline-block;
+    transition: all .5s ease-in;
+    padding: 40px;
 }
+
+header a:hover {
+    padding: 5px;
+    border-radius: 25px;
+    background-size: 100% 75%;
+    background-color: var(--nav-button-hover);
+}
+
+header ul li a {
+    color: var(--nav-text-color);
+}
+
 
 .basic-flex-box {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     flex: 1;
+    width: 100%;
+}
+
+.flex-box-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 50%;
+    min-height: 250px;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.flex-item-transition {
+    transition: all 0.5s;
+}
+
+.blurb {
+    background-color: var(--body-background-color);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.bannerimage {
+    background-image: url('../images/e1d846715a26dd676188a97c6977d19a.jpg');
+    height: 300px;
+    width: 100%;
+    background-size: contain;
+    background-position: center;
+
+}
+
+.works {
+    display: flex;
+    margin: 34px auto 0 auto;
+    max-width: 1280px;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-links {
+    display: inline-block;
+    transition: all .5s ease-in;
+    padding: 40px;
+
+}
+
+footer a:hover {
+    padding: 5px;
+    border-radius: 25px;
+    background-size: 100% 75%;
+    background-color: var(--nav-button-hover);
 }
