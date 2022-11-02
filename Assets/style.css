@@ -121,7 +121,7 @@ header ul li a {
 }
 
 .bannerimage {
-    background-image: url('../images/e1d846715a26dd676188a97c6977d19a.jpg');
+    background-image: url('./images/e1d846715a26dd676188a97c6977d19a.jpg');
     height: 300px;
     width: 100%;
     background-size: contain;
